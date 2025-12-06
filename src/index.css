@@ -1,8 +1,8 @@
 @import "tailwindcss";
-@source "../node_modules/flowbite";
 
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
-@import "flowbite/src/themes/default";
-
+/* 1. Cargar el plugin de Flowbite */
 @plugin "flowbite/plugin";
+
+/* 2. Indicar a Tailwind dónde buscar las clases de Flowbite */
+/* Nota: v4 ignora node_modules por defecto, por eso usamos @source */
+@source "../node_modules/flowbite";
